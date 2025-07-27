@@ -9,24 +9,35 @@ class IntroScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenwidth=MediaQuery.of(context).size.width;
+    final screenheight=MediaQuery.of(context).size.height;
+
     return Scaffold(
       backgroundColor: DarkbackgroundColor,
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 60),
+          padding: EdgeInsets.symmetric(horizontal: screenheight*0.1),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image(image: AssetImage("images/Vector.png")),
-              SizedBox(height:5,),
-              Text("Home",style: GoogleFonts.poppins(fontSize: 55,color: Colors.white,fontWeight: FontWeight.w600)),
-              Text("DECOR",style: TextStyle(fontSize: 45,color: Colors.white,)),
-              Text("Lorem ipsum dolor sit amet, consectetur\n        adipiscing elit, sed do eiusmod. ",style: TextStyle(color: Colors.white),),
-SizedBox(height: 25,),
-              CustomButton(label: "Login", onPressed: (){
+             const Image(image: AssetImage("images/Vector.png")),
+             const SizedBox(height:0.1,),
+              Text("Home",style: GoogleFonts.poppins(fontSize: screenwidth*0.1,color: Colors.white,fontWeight: FontWeight.w600)),
+              Text("DECOR",style: TextStyle(fontSize: screenheight*0.060,color: Colors.white,)),
+              Text("Lorem ipsum dolor sit amet, consectetur\nadipiscing elit, sed do eiusmod. "
+              
+              ,style: TextStyle(color: Colors.white,
+              
+              ),
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              ),
+const SizedBox(height: 25,),
+             CustomButton(label: "Login", onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
               }, backgroundColor: PinkAccent),
-              SizedBox(height: 10,),
+             const SizedBox(height: 10,),
               CustomButton(label: "Sign Up", onPressed: (){
               
               }, backgroundColor: PinkAccent)

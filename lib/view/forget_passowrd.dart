@@ -36,9 +36,9 @@ backgroundColor: Colors.transparent,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Reset Password?",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30)),
-                  SizedBox(height: 15,),
-                         Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",style: TextStyle(color: Colors.white),) ,
+                 const Text("Reset Password?",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30)),
+                const  SizedBox(height: 15,),
+                        const Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",style: TextStyle(color: Colors.white),) ,
 
                 ],
               ),

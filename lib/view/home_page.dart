@@ -32,12 +32,12 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
              _buildHeader(),
-             SizedBox(height: 20,),
-             Image(image: AssetImage("images/adds.png")),
-             SizedBox(height: 10,),
+            const SizedBox(height: 20,),
+           const  Image(image: AssetImage("images/adds.png")),
+            const SizedBox(height: 10,),
              _biuldSlider(),
           
-           SizedBox(height: 10,),
+          const SizedBox(height: 10,),
              Text("Categories",style: TextStyle(color: PinkAccent,fontSize: 20,fontWeight: FontWeight.bold),),
              SizedBox(height: 10,),
              Categorieslist(),
@@ -79,11 +79,11 @@ class HomePage extends StatelessWidget {
 const Column(
   crossAxisAlignment: CrossAxisAlignment.start,
   children: [
-    Text("Hi Welcome Back",style: TextStyle(
+   const Text("Hi Welcome Back",style: TextStyle(
       fontSize: 20,color: Colors.pinkAccent,
 
     ),),
-    Text("Create spaces that bring joy",style: TextStyle(
+   const Text("Create spaces that bring joy",style: TextStyle(
       fontSize: 15,color: Colors.white
     ),),
     
