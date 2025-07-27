@@ -1,10 +1,11 @@
+
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:homedecor/pages/intro.dart';
-import 'package:homedecor/pages/onboarding_screen.dart';
-import 'package:homedecor/utilis/color.dart';
+import 'package:homedecor/res/component/appcolor.dart';
+import 'package:homedecor/view/onboarding_screen.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -31,8 +32,8 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(image: AssetImage("images/Vector.png")),
-            SizedBox(height:5,),
+           const Image(image: AssetImage("images/Vector.png")),
+           const SizedBox(height:5,),
             Text("Home",style: GoogleFonts.poppins(fontSize: 55,color: Colors.white,fontWeight: FontWeight.w600)),
             Text("DECOR",style: TextStyle(fontSize: 45,color: Colors.white,)),
         

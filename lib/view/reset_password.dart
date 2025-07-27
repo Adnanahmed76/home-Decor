@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:homedecor/utilis/color.dart';
-import 'package:homedecor/utilis/custome_textfilled.dart';
-import 'package:homedecor/widgets/custom_button.dart';
+import 'package:homedecor/res/component/appcolor.dart';
+import 'package:homedecor/res/component/custom_button.dart';
+import 'package:homedecor/res/component/custometextfilled.dart';
+
 
 class ResetPassword extends StatefulWidget {
   const ResetPassword({super.key});

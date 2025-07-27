@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:homedecor/pages/reset_password.dart';
-import 'package:homedecor/utilis/color.dart';
-import 'package:homedecor/utilis/custome_textfilled.dart';
-import 'package:homedecor/widgets/custom_button.dart';
+import 'package:homedecor/res/component/appcolor.dart';
+import 'package:homedecor/res/component/custom_button.dart';
+import 'package:homedecor/res/component/custometextfilled.dart';
+import 'package:homedecor/view/reset_password.dart';
+
 class ForgetPassowrd extends StatefulWidget {
   const ForgetPassowrd({super.key});
 

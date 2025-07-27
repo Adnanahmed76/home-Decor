@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:homedecor/models/onboarding.dart';
-import 'package:homedecor/pages/intro.dart';
-import 'package:homedecor/utilis/color.dart';
+
+import 'package:homedecor/res/component/appcolor.dart';
+import 'package:homedecor/view/intro.dart';
+
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -25,8 +27,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     return WillPopScope(
       onWillPop: ()async{
         final shouldPop=await showDialog(context: context, builder: (context)=>AlertDialog(
-          title: Text("Exit App"),
-          content: Text("Do you really want to exit"),
+          title:const Text("Exit App"),
+          content:const Text("Do you really want to exit"),
           actions: [
             TextButton(onPressed: (){
 Navigator.of(context).pop(false);
@@ -114,7 +116,7 @@ Navigator.of(context).pop(true);
       
               child: TextButton(onPressed: (){
       
-              }, child: Text("Skip ->",style: TextStyle(color: Colors.black),)) )
+              }, child:const Text("Skip ->",style: TextStyle(color: Colors.black),)) )
         ],)
         ),
       ),
